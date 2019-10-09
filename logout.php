@@ -10,7 +10,7 @@ setcookie('name', '', time() - 3600);
 <html lang="en">
 <head> 
 
-	<title>ScheduleSmart</title> 
+	<title>Marathon-fyp</title> 
 
 	<link rel="stylesheet" href="css/css_in_most_pages.css">
 	<link rel="stylesheet" href="css/css_login.css">
@@ -31,7 +31,7 @@ setcookie('name', '', time() - 3600);
 	<!-- navigation bar on top -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container">
-    <a class="navbar-brand" href="index.php">ScheduleSmart Org</a>
+    <a class="navbar-brand" href="index.php">Marathon-fyp</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -77,15 +77,6 @@ setcookie('name', '', time() - 3600);
 </div>
 
 </div>
-
-	<script type="text/javascript">
-	
-	</script>
-    
-
-    
-
-    	
 
 
 

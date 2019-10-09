@@ -66,7 +66,7 @@ if (isset($_POST['login'])){
 <html lang="en">
 <head> 
 
-	<title>ScheduleSmart</title> 
+	<title>Marathon-fyp</title> 
 
 	<link rel="stylesheet" href="css/css_in_most_pages.css">
 	<link rel="stylesheet" href="css/css_login.css">
@@ -87,7 +87,7 @@ if (isset($_POST['login'])){
 	<!-- navigation bar on top -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container">
-    <a class="navbar-brand" href="index.php">ScheduleSmart Org</a>
+    <a class="navbar-brand" href="index.php">Marathon-fyp</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -163,14 +163,6 @@ if (isset($_POST['login'])){
     </div>
   </div>
 </div>
-
-	<script type="text/javascript">
-		//TODO if organizer button is checked, check if user is organizer, and send to organizer interface **************
-
-		//TODO if  organizer button is NOT checked, send to user interface *******************************
-	</script>
-    
-
     
 
     	

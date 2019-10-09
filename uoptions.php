@@ -5,7 +5,7 @@
 <html lang="en">
 <head> 
 
-	<title>ScheduleSmart</title> 
+	<title>Marathon-fyp</title> 
 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
@@ -21,7 +21,7 @@
 
 	<!-- navigation bar on top -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-	  <a class="navbar-brand" href="../index.php">ScheduleSmart</a>
+	  <a class="navbar-brand" href="../index.php">Marathon-fyp</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
