@@ -487,7 +487,7 @@ include 'pages.php';
 <!-- /.container -->
   <footer id="sticky-footer" class="py-4 bg-light text-dark-50">
     <div class="container text-center">
-      <small>ScheduleSmart</small>
+      <small>Marathon-fyp</small>
     </div>
   </footer>
 

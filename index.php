@@ -127,7 +127,7 @@ include 'pages.php';
 <div class="container">
 
   <!-- Page Heading -->
-  <h1 class="my-4">Upcoming Event
+  <h1 class="my-4">Hey I am using Marathon-fyp
   <br>
     <small>listed in pages( check it out now! )</small>
   </h1>
@@ -144,7 +144,7 @@ include 'pages.php';
 <!-- /.container -->
   <footer id="sticky-footer" class="py-4 bg-light text-dark-50">
     <div class="container text-center">
-      <small>ScheduleSmart</small>
+      <small>Marathon-fyp</small>
     </div>
   </footer>
 
