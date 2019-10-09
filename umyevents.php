@@ -23,7 +23,7 @@ session_start();
 		
 	}
 	
-	$q = "SELECT * FROM events WHERE type = :name;";
+	$q = "SELECT * FROM events;";
 	$query = $conn->prepare($q);
 	$query->bindValue(':name', $_COOKIE['memberlist']);
 	$query->execute();
