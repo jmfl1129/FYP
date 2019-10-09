@@ -475,13 +475,6 @@ include 'pages.php';
 	  </ul>
   
   </form>
-  
-		  <div class="row justify-content-md-center">
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="checkOnlyFreeEvents">
-                <label class="form-check-label" for="exampleCheck1">show only events when I'm free</label>
-            </div>     
-        </div>
 		
 
 <!-- /.container -->
