@@ -10,7 +10,7 @@ session_start();
     ltrim($db["path"], "/")
     ));
 	
-	$q = "SELECT * FROM events WHERE type = :name;";
+	$q = "SELECT * FROM events;";
 	$query = $conn->prepare($q);
 	$query->bindValue(':name', $_COOKIE['organizer']);
 	$query->execute();
