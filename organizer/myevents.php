@@ -30,7 +30,7 @@ include 'pages.php';
 <html lang="en">
 <head> 
 
-	<title>ScheduleSmart</title> 
+	<title>Marathon-fyp</title> 
 	
 	<link rel="stylesheet" href="../css/css_in_most_pages.css">
 
@@ -55,7 +55,7 @@ include 'pages.php';
 	<!-- navigation bar on top -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 		<div class="container">
-    <a class="navbar-brand" href="../index.php">ScheduleSmart Org</a>
+    <a class="navbar-brand" href="../index.php">Marathon-fyp</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -95,7 +95,7 @@ include 'pages.php';
 <div class="container">
 
   <!-- Page Heading -->
-  <h1 class="my-4">Upcoming Event
+  <h1 class="my-4">Marathon-fyp: u logged in :)
   <br>
     <small>listed in pages( check it out now! )</small>
   </h1>
@@ -473,7 +473,7 @@ include 'pages.php';
 <!-- /.container -->
   <footer id="sticky-footer" class="py-4 bg-light text-dark-50">
     <div class="container text-center">
-      <small>ScheduleSmart</small>
+      <small>Marathon-fyp</small>
     </div>
   </footer>
 

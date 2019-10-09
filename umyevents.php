@@ -109,7 +109,7 @@ include 'pages.php';
 <div class="container">
 
   <!-- Page Heading -->
-  <h1 class="my-4">Upcoming Event
+  <h1 class="my-4">Marathon-fyp: u logged in :)
   <br>
     <small>listed in pages( check it out now! )</small>
   </h1>
