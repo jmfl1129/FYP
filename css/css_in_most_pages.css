@@ -1,0 +1,16 @@
+body {
+  background: url('http://emeraldpointmarina.com/wp-content/uploads/sites/32/2018/05/event.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+.active-pink-3 input[type=text] {
+    border: 1px solid #f48fb1;
+    box-shadow: 0 0 0 1px #f48fb1;
+}
