@@ -90,7 +90,7 @@ include 'pages.php';
 		<li class="nav-item">
 		  <a class="nav-link" href="logout.php">Log out</a>
 		</li>
-		<form method="POST" action="index.php">
+		<form method="POST" action="umyevents.php">
 		<li class="nav-item">
 			<div class="active-pink-3 active-pink-4">
 			  <input class="form-control" type="text" placeholder="Search" name="Search" aria-label="Search">
