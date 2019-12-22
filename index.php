@@ -62,25 +62,28 @@ include 'pages.php';
 }
 
 .hovereffect:hover .overlay {
-  background-color: rgba(75,75,75,0.7);
+  background-color: #343a40;
 }
 
 .hovereffect a.info {
   display: inline-block;
   text-decoration: none;
-  padding: 7px 14px;
+  padding: 70px 140px;
   text-transform: uppercase;
   color: #fff;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   background-color: transparent;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
-  -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
-  transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
+  -webkit-transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
   font-weight: normal;
+  position: fixed;
+  top: 50%;
+  left: 39%;
 }
 
 .hovereffect:hover a.info {
