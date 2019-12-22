@@ -104,7 +104,7 @@ body {
 	<br>
 	  <div class=" col-sm-5">
 	    <label for="inputEmail"></label>
-	    <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email address">
+	    <input type="email" class="form-control bg-color" name="email" aria-describedby="emailHelp" placeholder="Email address">
 	  </div>
 	  <div class=" col-sm-5">
 	    <label for="inputPassword"></label>
