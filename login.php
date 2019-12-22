@@ -65,11 +65,11 @@ if (isset($_POST['login'])){
 <style>
 
 body {
-  background: url('https://i.pinimg.com/originals/f9/a8/ed/f9a8ed161524ca06e0d5250fe2d33e51.gif') no-repeat center center fixed !important;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/2/24/Hidalgoanimation2003.gif') no-repeat center center fixed !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover!important;
+  background-size: cover !important;
+  -o-background-size: cover !important;
 }
 
 </style>
