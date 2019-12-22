@@ -109,12 +109,22 @@ include 'pages.php';
 </head>
 <meta charset="utf-8"/>
 <body class="hovereffect">
-		
+
 			<!-- Page Content -->
 			
 	<div>
+	<?php if(isset($_COOKIE['name']) {
+		echo '<h4> Welcome '.$_COOKIE['name'].'.</h4>';
+	} ?>
         <div class="overlay">
-           <a class="info" href="login.php">LOG IN</a>
+           
+		   <?php if(isset($_COOKIE['organizer'])){
+			    ?> <a class="info" href="umyevents.php"> SEARCH</a>
+		   <?php }elseif(isset($_COOKIE['name']){
+			    ?> <a class="info" href="upload.php"> UPLOAD</a>
+		   <?php } else {
+				?> <a class="info" href="login.php"> LOG IN</a>
+		   <?php } ?>
         </div>
     </div>
 			
