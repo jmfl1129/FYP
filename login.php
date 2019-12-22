@@ -65,7 +65,7 @@ if (isset($_POST['login'])){
 <style>
 
 body {
-  background: url('https://media1.giphy.com/media/l0He3D7itEXKbdP3O/source.gif') no-repeat center center fixed;
+  background: url('https://i.pinimg.com/originals/f9/a8/ed/f9a8ed161524ca06e0d5250fe2d33e51.gif') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
