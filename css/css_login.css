@@ -16,3 +16,7 @@
   padding: 1rem;
   transition: all 0.2s;
 }
+
+.form-control {
+  background-color: #000;
+}

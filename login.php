@@ -104,11 +104,11 @@ body {
 	<br>
 	  <div class=" col-sm-5">
 	    <label for="inputEmail"></label>
-	    <input type="email" name="email" aria-describedby="emailHelp" placeholder="Email address">
+	    <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email address">
 	  </div>
 	  <div class=" col-sm-5">
 	    <label for="inputPassword"></label>
-	    <input type="password" name="password" placeholder="Password">
+	    <input type="password" class="form-control" name="password" placeholder="Password">
 	  </div>
 	  <br>
 	  <br>
