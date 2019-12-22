@@ -57,35 +57,12 @@ include 'pages.php';
   overflow: hidden;
   top: 0;
   left: 0;
-  background-color: rgba(75,75,75,0.7);
   -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
   transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
 }
 
 .hovereffect:hover .overlay {
-  background-color: rgba(48, 152, 157, 0.4);
-}
-
-
-.hovereffect h2 {
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.6);
-  -webkit-transform: translateY(45px);
-  -ms-transform: translateY(45px);
-  transform: translateY(45px);
-  -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
-  transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
-}
-
-.hovereffect:hover h2 {
-  -webkit-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  transform: translateY(5px);
+  background-color: rgba(75,75,75,0.7);
 }
 
 .hovereffect a.info {
@@ -104,8 +81,6 @@ include 'pages.php';
   -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
   transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
   font-weight: normal;
-  margin: -52px 0 0 0;
-  padding: 62px 100px;
 }
 
 .hovereffect:hover a.info {
@@ -153,8 +128,7 @@ include 'pages.php';
 			
 	<div>
         <div class="overlay">
-           <h2>Hover effect 4v2</h2>
-           <a class="info" href="#">link here</a>
+           <a class="info" href="#">LOG IN</a>
         </div>
     </div>
 			
