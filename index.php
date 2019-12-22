@@ -72,7 +72,7 @@ include 'pages.php';
 			
 			
 <!-- /.container -->
-  <footer id="sticky-footer" class="py-4 bg-light text-dark-50 fixed-bottom">
+  <footer id="sticky-footer" class="py-4 bg-dark text-white-50 fixed-bottom">
     <div class="container text-center">
       <small>Marathon-fyp</small>
     </div>
