@@ -40,15 +40,6 @@ include 'pages.php';
 
 
 <style>
-.hovereffect {
-  width: 100%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: default;
-}
 
 .hovereffect:hover {
   background: url('https://cdn.wallpapersafari.com/34/78/1fnjO5.png') no-repeat center center fixed;
