@@ -43,6 +43,10 @@ include 'pages.php';
 
 .hovereffect:hover {
   background: url('https://cdn.wallpapersafari.com/34/78/1fnjO5.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 .hovereffect a.info {
