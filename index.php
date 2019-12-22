@@ -49,7 +49,7 @@ include 'pages.php';
   -o-background-size: cover;
 }
 
-.hovereffect a.info {
+.hovereffect .info {
   display: inline-block;
   text-decoration: none;
   padding: 70px 140px;
@@ -70,14 +70,14 @@ include 'pages.php';
   left: 39%;
 }
 
-.hovereffect:hover a.info {
+.hovereffect:hover .info {
   opacity: 1;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
-.hovereffect a.info:hover {
+.hovereffect .info:hover {
   box-shadow: 0 0 5px #fff;
 }
 /* reference: https://miketricking.github.io/bootstrap-image-hover/ hover effect 4v2*/
@@ -120,7 +120,11 @@ include 'pages.php';
         <div class="overlay">
            
 		   <?php if(isset($_COOKIE['organizer'])){
-			    ?> <a class="info" href="upload.php"> UPLOAD</a>
+				?> <form action="upload.php" method="post" enctype="multipart/form-data">
+				Select Image File to Upload:
+				<input type="file" name="file">
+				<input class="info" type="submit" name="submit" value="Upload">
+				</form>
 		   <?php }elseif(isset($_COOKIE['name'])){
 			    ?> <a class="info" href="search.php"> SEARCH</a>
 		   <?php } else {
