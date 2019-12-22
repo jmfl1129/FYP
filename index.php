@@ -115,7 +115,7 @@ include 'pages.php';
 	<div>
 	<?php if(isset($_COOKIE['name'])) {
 		echo '<h4> Welcome '.$_COOKIE['name'].'.</h4>';
-		?> <a "logout.php"> LOG OUT </a>
+		?> <a href="logout.php"> LOG OUT </a>
 	<?php } ?>
         <div class="overlay">
            
