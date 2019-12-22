@@ -95,16 +95,6 @@ body {
 <meta charset="utf-8"/>
 <body>
 	
-	
-<div class="container">
-
-  <!-- Page Heading -->
-  <h1 class="my-4">Login Now!!
-  <br>
-    <small>check your user mode(s)</small>
-  </h1>
-
-</div>
 
 	<div class="container" align="center">
 		
