@@ -50,17 +50,6 @@ include 'pages.php';
   cursor: default;
 }
 
-.hovereffect .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
-  transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
-}
-
 .hovereffect:hover .overlay {
   background-color: #343a40;
 }
@@ -87,6 +76,7 @@ include 'pages.php';
 }
 
 .hovereffect:hover a.info {
+  opacity: 1;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
