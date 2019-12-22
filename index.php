@@ -114,7 +114,7 @@ include 'pages.php';
 			
 	<div>
         <div class="overlay">
-           <a class="info" href="#">LOG IN</a>
+           <a class="info" href="login.php">LOG IN</a>
         </div>
     </div>
 			

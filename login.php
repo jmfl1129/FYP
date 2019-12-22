@@ -62,6 +62,18 @@ if (isset($_POST['login'])){
 }
 ?>
 
+<style>
+
+body {
+  background: url('https://media1.giphy.com/media/l0He3D7itEXKbdP3O/source.gif') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+</style>
+
 <!DOCTYPE html>
 <html lang="en">
 <head> 
@@ -82,42 +94,6 @@ if (isset($_POST['login'])){
 </head>
 <meta charset="utf-8"/>
 <body>
-
-	
-	<!-- navigation bar on top -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<div class="container">
-    <a class="navbar-brand" href="index.php">Marathon-fyp</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.php">Home
-              </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-		<li class="nav-item">
-		  <a class="nav-link" href="login.php">Sign in
-                <span class="sr-only">(current)</span>
-				</a>
-		</li>
-      </ul>
-    </div>
-  </div>
-	</nav>
-	<br>
-	<br>
-	<!-- END OF navigation bar on top -->
 	
 	
 <div class="container">
@@ -130,10 +106,6 @@ if (isset($_POST['login'])){
 
 </div>
 
-
-	<div class="container">
-  <div class="card border-0 shadow my-5">
-    <div class="card-body p-5">
 	<div class="container" align="center">
 		
 
@@ -161,9 +133,15 @@ if (isset($_POST['login'])){
              
 	</form>
 	<!-- END of form used to log in --></p>
-    </div>
-  </div>
+	
 </div>
+	
+	<footer id="sticky-footer" class="py-4 text-white-50 fixed-bottom">
+    <div class="container text-center">
+      <small>Marathon-fyp</small>
+    </div>
+  </footer>
+  
     
 
     	
