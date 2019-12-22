@@ -101,7 +101,6 @@ body {
 
 		<!-- form used to log in -->
 	<form method="POST" action="login.php" class="form-signin">
-	<h5> Please enter your email address and password </h5>
 	<br>
 	  <div class="form-group col-sm-5">
 	    <label for="inputEmail"></label>

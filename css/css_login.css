@@ -16,13 +16,3 @@
   padding: 1rem;
   transition: all 0.2s;
 }
-
-body > div > div.card.border-0.shadow.my-5 > div > div > form > button.btn.btn-lg.btn-google.btn-block.text-uppercase{
-  color: white;
-  background-color: #ea4335;
-}
-
-body > div > div.card.border-0.shadow.my-5 > div > div > form > button.btn.btn-lg.btn-facebook.btn-block.text-uppercase{
-  color: white;
-  background-color: #3b5998;
-}
