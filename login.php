@@ -102,19 +102,19 @@ body {
 		<!-- form used to log in -->
 	<form method="POST" action="login.php" class="form-signin">
 	<br>
-	  <div class="form-group col-sm-5">
+	  <div class=" col-sm-5">
 	    <label for="inputEmail"></label>
 	    <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email address">
 	  </div>
-	  <div class="form-group col-sm-5">
+	  <div class=" col-sm-5">
 	    <label for="inputPassword"></label>
 	    <input type="password" class="form-control" name="password" placeholder="Password">
 	  </div>
 	  <br>
 	  <br>
-	  <button type="submit" name= "login" class="btn btn-lg btn-primary btn-block text-uppercase col-sm-5" >Submit</button>
+	  <button type="submit" name= "login" class="btn btn-lg btn-block text-uppercase col-sm-5" >Submit</button>
 	  <br>
-	  <a class="btn btn-lg btn-primary btn-block text-uppercase col-sm-5" href = "sscreateaccount.php">Sign up</a>
+	  <a class="btn btn-lg btn-block text-uppercase col-sm-5" href = "sscreateaccount.php">Sign up</a>
 	  <br>
 	  <button class="btn btn-lg btn-google btn-block text-uppercase col-sm-5" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
 	  <br>
