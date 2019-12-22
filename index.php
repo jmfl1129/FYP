@@ -48,12 +48,10 @@ include 'pages.php';
   position: relative;
   text-align: center;
   cursor: default;
-  opacity: 1;
 }
 
 .hovereffect:hover {
-  background-color: #343a40;
-  opacity: 0;
+  background: url('https://cdn.wallpapersafari.com/34/78/1fnjO5.png') no-repeat center center fixed;
 }
 
 .hovereffect a.info {
