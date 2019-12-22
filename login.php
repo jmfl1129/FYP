@@ -121,7 +121,7 @@ body {
       <button class="btn btn-lg btn-facebook btn-block text-uppercase col-sm-5" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>
              
 	</form>
-	<!-- END of form used to log in --></p>
+	<!-- END of form used to log in -->
 	
 </div>
 	

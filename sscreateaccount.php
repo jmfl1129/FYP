@@ -90,6 +90,18 @@ if (isset($_POST['Signup'])){
 }
 ?>
 
+<style>
+
+body {
+  background: url('https://cdna.artstation.com/p/assets/images/images/014/004/696/original/ira-geneve-darksouls-animated-wallpaper.gif?1542049339') no-repeat center center fixed !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover!important;
+  background-size: cover !important;
+  -o-background-size: cover !important;
+}
+
+</style>
+
 <!DOCTYPE html>
 <html lang="en">
 <head> 
@@ -110,58 +122,9 @@ if (isset($_POST['Signup'])){
 </head>
 <meta charset="utf-8"/>
 <body>
-
-	
-	<!-- navigation bar on top -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<div class="container">
-    <a class="navbar-brand" href="index.php">Marathon-fyp</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home
-              </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-		<li class="nav-item">
-		  <a class="nav-link" href="login.php">Sign in
-			</a>
-		  
-		</li>
-      </ul>
-    </div>
-  </div>
-	</nav>
-	<br>
-	<br>
-	<!-- END OF navigation bar on top -->
 	
 	
-<div class="container">
-
   <!-- Page Heading -->
-  <h1 class="my-4">Login Now!!
-  <br>
-    <small>check your user mode(s)</small>
-  </h1>
-
-</div>
-
-
-	<div class="container">
-  <div class="card border-0 shadow my-5">
-    <div class="card-body p-5">
 	<div class="container" align="center">
 		
 
@@ -171,7 +134,7 @@ if (isset($_POST['Signup'])){
 	<br>
 	  <div class="form-group">
 	    <label for="inputName"></label>
-	    <input type="text" class="form-control" id="inputName" name="Name" placeholder=" Your username shown to everybody here: ">
+	    <input type="text" class="form-control" id="inputName" name="Name" placeholder="Username">
 	  </div>
 	  <div class="form-group">
 	    <label for="inputEmail"></label>
@@ -183,13 +146,13 @@ if (isset($_POST['Signup'])){
 	  </div>
 	  <div class="form-group">
 	    <label for="inputOrganizer"></label>
-	    <input type="text" class="form-control" id="inputOrganizer" name="Organizer" placeholder="Organization name here, leave it blank if you aren't">
+	    <input type="text" class="form-control" id="inputOrganizer" name="Organizer" placeholder="Photographer please leave an id">
 	  </div>
 	  <br>
 	  <br>
-	  <button type="submit" name="Signup" class="btn btn-lg btn-primary btn-block text-uppercase">Sign up</button>
+	  <button type="submit" name="Signup" class="btn btn-lg btn-block text-uppercase">Sign up</button>
 	  <br>
-	  <a class="btn btn-lg btn-primary btn-block text-uppercase" href = "Forgetpassword.php">Forget Password</a>
+	  <a class="btn btn-lg btn-block text-uppercase" href = "Forgetpassword.php">Forget Password</a>
 	  <br>
 	  <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign up with Google</button>
 	  <br>
@@ -197,8 +160,6 @@ if (isset($_POST['Signup'])){
              
 	</form>
 	<!-- END of form used to log in --></p>
-    </div>
-  </div>
 </div>
 
 	<script type="text/javascript">

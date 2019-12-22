@@ -31,7 +31,6 @@ if(isset($_COOKIE['id'])){
 	
 	$q = "SELECT * FROM events WHERE type = 'public';";
 	$query = $conn->prepare($q);
-	$query->bindValue(':name', $_COOKIE['organizer']);
 	$query->execute();
 	
 	
@@ -120,9 +119,9 @@ include 'pages.php';
         <div class="overlay">
            
 		   <?php if(isset($_COOKIE['organizer'])){
-			    ?> <a class="info" href="umyevents.php"> SEARCH</a>
-		   <?php }elseif(isset($_COOKIE['name'])){
 			    ?> <a class="info" href="upload.php"> UPLOAD</a>
+		   <?php }elseif(isset($_COOKIE['name'])){
+			    ?> <a class="info" href="search.php"> SEARCH</a>
 		   <?php } else {
 				?> <a class="info" href="login.php"> LOG IN</a>
 		   <?php } ?>
