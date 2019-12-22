@@ -87,7 +87,6 @@ include 'pages.php';
 }
 
 .hovereffect:hover a.info {
-  opacity: 1;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
