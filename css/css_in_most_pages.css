@@ -9,7 +9,9 @@ body {
 #sticky-footer {
   flex-shrink: none;
   position: fixed;
+  height: 100px;
   bottom: 0;
+  width: 100%;
 }
 
 .active-pink-3 input[type=text] {
