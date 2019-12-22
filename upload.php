@@ -44,7 +44,7 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
 
 // Display status message
 echo $statusMsg;
-?>
+
 
 /* reference: https://www.codexworld.com/upload-store-image-file-in-database-using-php-mysql/ */
 	
