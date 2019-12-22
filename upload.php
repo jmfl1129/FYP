@@ -25,7 +25,8 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
         // Upload file to server
         if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
             // Insert image file name into database
-            $query = $conn->prepare("INSERT into events (time, photolink) VALUES ( NOW(),'".$fileName."');");
+            $query = $conn->prepare("INSERT into events (time, photolink) VALUES ( NOW(), :filename ) ;");
+			$query->bindValue(':filename', $fileName);
 			$insert = $query->execute();
             if($insert){
                 $statusMsg = "The file ".$fileName. " has been uploaded successfully.";
