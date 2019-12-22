@@ -8,6 +8,7 @@ body {
 
 #sticky-footer {
   flex-shrink: none;
+  position: bottom;
 }
 
 .active-pink-3 input[type=text] {
