@@ -50,15 +50,7 @@ include 'pages.php';
   cursor: default;
 }
 
-.hovereffect .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.hovereffect:hover .overlay {
+.hovereffect:hover {
   background-color: #343a40;
 }
 
