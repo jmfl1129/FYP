@@ -67,80 +67,10 @@ include 'pages.php';
 </head>
 <meta charset="utf-8"/>
 <body>
-
-	<!-- navigation bar on top -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-		<div class="container">
-    <a class="navbar-brand" href="index.php">Marathon-fyp</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.php">Home
-                <span class="sr-only">(current)</span>
-              </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-		<?php if(isset($_COOKIE['id'])){ 
-				if(isset($_COOKIE['organizer'])){
-		?>
-		<li class="nav-item">
-		  <a class="nav-link" href="organizer/myevents.php"> <?php echo $_COOKIE['name']; ?> </a>
-		</li>
-		<?php }  else { ?>
-		<li class="nav-item">
-		  <a class="nav-link" href="umyevents.php"> <?php echo $_COOKIE['name']; ?> </a>
-		</li>
-		<?php } ?>
-		<li class="nav-item">
-		  <a class="nav-link" href="logout.php">Log out</a>
-		</li>
-		<?php } else { ?>
-		<li class="nav-item">
-		  <a class="nav-link" href="login.php">Sign in</a>
-		</li>
-		<?php } ?>
-		
-	  <form method="POST" action="index.php">
-		<li class="nav-item">
-			<div class="active-pink-3 active-pink-4">
-			  <input class="form-control" type="text" placeholder="Search" name="Search" aria-label="Search">
-			</div>
-		</li>
-	  </form>
-      </ul>
-    </div>
-  </div>
-	</nav>
-	<br>
-	<br>
-	<!-- END OF navigation bar on top -->
 		
 			<!-- Page Content -->
-<div class="container">
-
-  <!-- Page Heading -->
-  <h1 class="my-4">Hey I am using Marathon-fyp
-  <br>
-    <small>listed in pages( check it out now! )</small>
-  </h1>
-
-</div>
-
-	<div class="container">
-	  <div class="card border-0 shadow my-5">
-		<div class="card-body p-5">
-		  <h1 class="font-weight-light">Choose what you want</h1>
-		  
-		  
-
+			
+			
 <!-- /.container -->
   <footer id="sticky-footer" class="py-4 bg-light text-dark-50">
     <div class="container text-center">
