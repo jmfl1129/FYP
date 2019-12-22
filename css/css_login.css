@@ -17,9 +17,9 @@
   transition: all 0.2s;
 }
 
-.bg-color {
-  background-color: rgba(0,0,0,.9);
-  background-clip: padding-box;
-  border: 1px solid rgba(0,0,0,.9);
+.form-control {
+  background-color: rgba(0,0,0,.9) !important;
+  background-clip: padding-box !important;
+  border: 1px solid rgba(0,0,0,.9) !important;
   text-align: center;
 }
