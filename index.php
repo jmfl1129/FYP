@@ -114,14 +114,14 @@ include 'pages.php';
 			<!-- Page Content -->
 			
 	<div>
-	<?php if(isset($_COOKIE['name']) {
+	<?php if(isset($_COOKIE['name'])) {
 		echo '<h4> Welcome '.$_COOKIE['name'].'.</h4>';
 	} ?>
         <div class="overlay">
            
 		   <?php if(isset($_COOKIE['organizer'])){
 			    ?> <a class="info" href="umyevents.php"> SEARCH</a>
-		   <?php }elseif(isset($_COOKIE['name']){
+		   <?php }elseif(isset($_COOKIE['name'])){
 			    ?> <a class="info" href="upload.php"> UPLOAD</a>
 		   <?php } else {
 				?> <a class="info" href="login.php"> LOG IN</a>
