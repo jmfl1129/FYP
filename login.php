@@ -65,7 +65,7 @@ if (isset($_POST['login'])){
 <style>
 
 body {
-  background: url('https://upload.wikimedia.org/wikipedia/commons/2/24/Hidalgoanimation2003.gif') no-repeat center center fixed !important;
+  background: url('https://cdna.artstation.com/p/assets/images/images/014/004/696/original/ira-geneve-darksouls-animated-wallpaper.gif?1542049339') no-repeat center center fixed !important;
   -webkit-background-size: cover !important;
   -moz-background-size: cover!important;
   background-size: cover !important;
