@@ -48,10 +48,12 @@ include 'pages.php';
   position: relative;
   text-align: center;
   cursor: default;
+  opacity: 1;
 }
 
 .hovereffect:hover {
   background-color: #343a40;
+  opacity: 0;
 }
 
 .hovereffect a.info {
