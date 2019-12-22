@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', 1);
 session_start();
 	$db = parse_url(getenv("DATABASE_URL"));
   $conn = new PDO("pgsql:". sprintf(
