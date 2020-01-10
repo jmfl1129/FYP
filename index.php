@@ -114,13 +114,13 @@ include 'pages.php';
 			
 	<div>
 	<?php if(isset($_COOKIE['name'])) {
-		echo '<h4> Welcome '.$_COOKIE['name'].'.</h4>';
+		echo '<h4 class="text-primary"> Welcome '.$_COOKIE['name'].'.</h4>';
 		?> <a href="logout.php"> LOG OUT </a>
 	<?php } ?>
         <div class="overlay">
            
 		   <?php if(isset($_COOKIE['organizer'])){
-				?> <form action="upload.php" method="post" enctype="multipart/form-data">
+				?> <form class="text-primary" action="upload.php" method="post" enctype="multipart/form-data">
 				Select Image File to Upload:
 				<input type="file" name="file">
 				<input class="info" type="submit" name="submit" value="Upload">
