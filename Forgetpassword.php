@@ -1,14 +1,7 @@
 <?php
 function SendForgetPasswordEmail($email){
-  $db = parse_url(getenv("DATABASE_URL"));
-  $conn = new PDO("pgsql:". sprintf(
-    "host=%s;port=%s;user=%s;password=%s;dbname=%s",
-    $db["host"],
-    $db["port"],
-    $db["user"],
-    $db["pass"],
-    ltrim($db["path"], "/")
-    ));
+	
+include 'connect.php';
 	
   // check if the email have been used to register an account
   $q = 'SELECT FROM users WHERE email = :name;';

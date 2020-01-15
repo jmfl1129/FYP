@@ -1,14 +1,7 @@
 <?php
 function Signup($name, $email, $password, $organizer){
-  $db = parse_url(getenv("DATABASE_URL"));
-  $conn = new PDO("pgsql:". sprintf(
-    "host=%s;port=%s;user=%s;password=%s;dbname=%s",
-    $db["host"],
-    $db["port"],
-    $db["user"],
-    $db["pass"],
-    ltrim($db["path"], "/")
-    ));
+	
+include 'connect.php';
 	
   // check if the username have been used
   $q = 'SELECT * FROM users WHERE name = :name;';
