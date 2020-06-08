@@ -316,7 +316,7 @@ body {
 				$object_name = 'images.png';
 				//include 'uploads/php_sdk_download.php';
 				$_SESSION['localfile'] = 'img_tmp/' . $_COOKIE['name'] . '/' . $object_name;
-				$_SESSION['photolink'] = 'images';
+				$_SESSION['photolink'] = 'images.png';
 				$_SESSION['photoname'] = 'test';
 				$_SESSION['competition'] = 'test';
 				$_SESSION['photouploadingtime'] = 'test';
