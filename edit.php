@@ -10,7 +10,7 @@ if (!isset($_COOKIE['id'])){
 
 session_start();
 
-$_SESSION['rowcount'] = "";
+/* $_SESSION['rowcount'] = "";
 
 include 'connect.php';
 	
@@ -44,7 +44,7 @@ include 'connect.php';
   
   //set session variable
   $_SESSION['rowcount'] = $query->rowCount();
-  $_SESSION['query'] = $query;
+  $_SESSION['query'] = $query; */
 
 
 ?>
