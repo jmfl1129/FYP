@@ -6,13 +6,6 @@ body {
   -o-background-size: cover;
 }
 
-#sticky-footer {
-  flex-shrink: none;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
 .active-pink-3 input[type=text] {
     border: 1px solid #f48fb1;
     box-shadow: 0 0 0 1px #f48fb1;

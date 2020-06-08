@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/css_button_general.css">
+		
+		<title></title>
+	</head>
+	<body>
+	
+		<!--添加音频播放，设置为自动播放,并隐藏播放控件的显示-->
+		<audio id="audio" controls="controls" hidden="hidden">
+			<source src="file/tears.mp3" type="audio/mp3">
+			<source src="file/tears.mp3" type="audio/ogg">
+			<embed height="50px" width="100px" src="file/tears.mp3">
+		</audio>
+		
+				
+		<div class="button">
+		  <h1 class="onoff">
+			<span class="first" onclick="audio.loop = true; audio.play()">P</span><span onclick="audio.pause()">a</span><span class="first" onclick="audio.loop = true; audio.play()">lay</span><span onclick="audio.pause()">use</span>
+		  </h1>
+		</div>
+		
+	</body>
+</html>

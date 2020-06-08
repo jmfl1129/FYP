@@ -1,42 +1,20 @@
+<!-- all photos in the whole website credited from the Internet -->
+
 <?php
 ini_set('display_errors', 1);
 session_start();
 include 'connect.php';
 	
-
-if(isset($_COOKIE['id'])){
-	
-	$qt = 'SELECT * FROM users WHERE id = :name;';
-	$queryt = $conn->prepare($qt);
-	$queryt->bindValue(':name', $_COOKIE['id']);
-	$queryt->execute();
-		  
-	if($rowt = $queryt->fetch(\PDO::FETCH_ASSOC)){
-		setcookie('name', '', time() - 3600);
-		setcookie('organizer', '', time() - 3600);
-		setcookie('name', $rowt['name'], time() + (86400 * 30) , "/");
-		setcookie('organizer', $rowt['organizer'], time() + (86400 * 30) , "/");
-	}
-}
-
-
-	
-	$q = "SELECT * FROM events WHERE type = 'public';";
-	$query = $conn->prepare($q);
-	$query->execute();
-	
-	
-
-include 'pages.php';
 ?>
 
 
 <style>
 
 .hovereffect:hover {
-  background: url('https://cdn.wallpapersafari.com/34/78/1fnjO5.png') no-repeat center center fixed;
+  background: url('https://www.ehotelsasia.com/wp-content/uploads/2018/10/Black-Background-DX58.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
+  -ms-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
@@ -57,7 +35,7 @@ include 'pages.php';
   -webkit-transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
   transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
   font-weight: normal;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 39%;
 }
@@ -80,8 +58,6 @@ include 'pages.php';
 <head> 
 
 	<title>Marathon-fyp</title> 
-	
-	<link rel="stylesheet" href="css/css_in_most_pages.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
@@ -96,7 +72,7 @@ include 'pages.php';
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-
+	<link rel="stylesheet" href="css/css_in_most_pages.css">
 
 </head>
 <meta charset="utf-8"/>
@@ -106,19 +82,26 @@ include 'pages.php';
 			
 	<div>
 	<?php if(isset($_COOKIE['name'])) {
-		echo '<h4 class="text-primary"> Welcome '.$_COOKIE['name'].'.</h4>';
-		?> <a href="logout.php"> LOG OUT </a>
+		echo '<h4 class="text-primary text-info"> Welcome '.$_COOKIE['name'].'.</h4>';
+		?> <a href="logout.php" class="text-info"> LOG OUT </a>
 	<?php } ?>
         <div class="overlay">
            
-		   <?php if(isset($_COOKIE['organizer'])){
-				?> <form class="text-primary" action="upload.php" method="post" enctype="multipart/form-data">
-				Select Image File to Upload:
-				<input type="file" name="file">
-				<input class="info" type="submit" name="submit" value="Upload">
-				</form>
-		   <?php }elseif(isset($_COOKIE['name'])){
-			    ?> <a class="info" href="search.php"> SEARCH</a>
+		   <?php 
+				if(isset($_COOKIE['photographer'])){
+					if(strcasecmp($_COOKIE['photographer'], "Yes") == 0){
+						echo "<script
+							type='text/javascript'>
+							window.location= \"photographer_index.php\";
+							 </script>";
+				?> 
+				<a class="info" href="upload.php"> UPLOAD</a>
+				<?php }}elseif(isset($_COOKIE['name'])){
+					echo "<script
+							type='text/javascript'>
+							window.location= \"normaluser_index.php\";
+							 </script>";
+			    ?> <a class="info" href="search_box.php"> SEARCH</a>
 		   <?php } else {
 				?> <a class="info" href="login.php"> LOG IN</a>
 		   <?php } ?>
@@ -127,7 +110,7 @@ include 'pages.php';
 			
 			
 <!-- /.container -->
-  <footer id="sticky-footer" class="py-4 text-white-50 fixed-bottom">
+  <footer id="sticky-footer" class="page-footer py-4 text-white-50 fixed-bottom">
     <div class="container text-center">
       <small>Marathon-fyp</small>
     </div>
@@ -137,16 +120,12 @@ include 'pages.php';
 </div>
 </div>
 
-<!-- reference startbootstrap.com/snippets/full-image-background/
-	 startbootstrap.com/snippets/portfolio-four-column/https://www.codexworld.com/bootstrap-modal-dynamic-content-jquery-ajax-php-mysql/
-	 https://mdbootstrap.com/docs/jquery/forms/search/
--->
-
 
 
 </body>
 
 <script type="text/javascript">
+	
 
 </script>
 
