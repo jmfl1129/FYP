@@ -1,11 +1,6 @@
 <!-- all photos in the whole website credited from the Internet -->
 
 <?php
-echo "<script
-							type='text/javascript'>
-							window.location= \"zhuye.html\";
-							 </script>";
-
 
 ini_set('display_errors', 1);
 session_start();
