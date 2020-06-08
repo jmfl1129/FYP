@@ -11,7 +11,7 @@
 
 function login($email, $password){
 
- include 'connect.php';
+/*  include 'connect.php';
 	
   // check if the email is wrong or not
   $q = 'SELECT * FROM users WHERE email = :email;';
@@ -61,7 +61,22 @@ function login($email, $password){
 		  
 	  }
   
-  }
+  } */
+  
+			setcookie('logged', '', time() - 3600);
+			setcookie('email', '', time() - 3600);
+			setcookie('id', '', time() - 3600);
+			setcookie('name', '', time() - 3600);
+			setcookie('photographer', '', time() - 3600);
+			setcookie('logged', 'true', time() + (86400 * 30), "/");
+			setcookie('email', $email, time() + (86400 * 30) , "/");
+			setcookie('id', 1, time() + (86400 * 30) , "/");
+			setcookie('name', 'test', time() + (86400 * 30) , "/");
+			setcookie('photographer', 'Yes', time() + (86400 * 30) , "/");
+			echo "<script
+			type='text/javascript'>
+			window.location= \"index.php\";
+			 </script>";
 }
 
 session_start();

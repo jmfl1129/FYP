@@ -307,6 +307,83 @@ body {
 		<!-- Photo Grid -->
 
 		<div class="row"> 
+		
+		<!-- for demo website -->
+		<div class="column">
+			  <?php 
+				//$row = $_SESSION['query']->fetch(\PDO::FETCH_ASSOC);
+				$_SESSION['i'] = 1;
+				$object_name = 'images';
+				//include 'uploads/php_sdk_download.php';
+				$_SESSION['localfile'] = 'img_tmp/' . $_COOKIE['name'] . '/' . $object_name;
+				$_SESSION['photolink'] = 'images';
+				$_SESSION['photoname'] = 'test';
+				$_SESSION['competition'] = 'test';
+				$_SESSION['photouploadingtime'] = 'test';
+				$_SESSION['venue'] = 'test';
+				$_SESSION['number'] = 'test';
+				$_SESSION['dateofthecompetition'] = 'test';
+			  ?>
+			  <img src=<?php echo $_SESSION['localfile']; ?> onclick="popup('<?php echo 'a' . $_SESSION['i']; ?>');">
+			  <div class="modal" display="none !important" id="<?php echo 'a' . $_SESSION['i']; ?>">
+					<form method="POST" action="finish_edit.php" id="f<?php echo $_SESSION['i']?>">
+					  <div class="options">
+						  <img src=<?php echo $_SESSION['localfile']; ?>></img>
+						  <div class="flex">
+							<div class="message">
+							  <label for="photoname<?php echo $_SESSION['i'] ?>">Photoname:</label>
+							  <input form="f<?php echo $_SESSION['i']?>" type="text" value="<?php echo $_SESSION['photoname']; ?>" name="photoname<?php echo $_SESSION['i'] ?>" >
+							</div>
+							<div class="message">
+							  <label for="competition<?php echo $_SESSION['i'] ?>">Competition:</label>
+							  <input form="f<?php echo $_SESSION['i']?>" type="text" value="<?php echo $_SESSION['competition']; ?>" name="competition<?php echo $_SESSION['i'] ?>" >
+							</div>
+							<div class="message">
+							  <label for="photouploadingtime<?php echo $_SESSION['i'] ?>">Photo uploading time:</label>
+							  <input form="f<?php echo $_SESSION['i']?>" type="text" value="<?php echo $_SESSION['photouploadingtime']; ?>" name="photouploadingtime<?php echo $_SESSION['i'] ?>" >
+							</div>
+							<div class="message">
+							  <label for="venue<?php echo $_SESSION['i'] ?>">Venue:</label>
+							  <input form="f<?php echo $_SESSION['i']?>" type="text" value="<?php echo $_SESSION['venue']; ?>" name="venue<?php echo $_SESSION['i'] ?>" >
+							</div>
+							<div class="message">
+							  <label for="number<?php echo $_SESSION['i'] ?>">Number:</label>
+							  <input form="f<?php echo $_SESSION['i']?>" type="text" value="<?php echo $_SESSION['number']; ?>" name="number<?php echo $_SESSION['i'] ?>" >
+							</div>
+							<div class="message">
+							  <label for="dateofthecompetition<?php echo $_SESSION['i'] ?>">Date of the competition:</label>
+							  <input form="f<?php echo $_SESSION['i']?>" type="text" value="<?php echo $_SESSION['dateofthecompetition']; ?>" name="dateofthecompetition<?php echo $_SESSION['i'] ?>" >
+							</div>
+							
+								<input form="f<?php echo $_SESSION['i']?>" type="submit" name="edit<?php echo $_SESSION['i'] ?>" id="e<?php echo $_SESSION['i']?>" style="opacity: 0; position: absolute; left: -100vw;" value="<?php echo $_SESSION['photolink']; ?>"></input>
+							  <div class="options">
+								<label for="e<?php echo $_SESSION['i']?>" class="btn">Edit</label>
+								<p class="btn" onclick="popup('<?php echo 'a' . $_SESSION['i']; ?>');" style="margin-bottom: 8px !important;">Close</p>
+								
+							  </div>
+						  </div>
+					  </div>
+					</form>
+			  </div>
+			  <?php 
+				  # select button
+				  echo "
+						<input form=\"dn\" type=\"checkbox\" id=\"cb{$_SESSION['i']}\" name=\"check_list[]\" value=\"{$_SESSION['photolink']}\" style=\"opacity: 0; position: absolute; left: -100vw;\">
+						
+						<label class=\"nbtn\" for=\"cb{$_SESSION['i']}\" id=\"b{$_SESSION['i']}\" onclick=\"color('b{$_SESSION['i']}');\">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						</label>";
+				  if ($_SESSION['i'] == $_SESSION['rowcount'])
+				  {
+					  break;
+				  }
+			  ?>
+		  </div>
+		
+		
 		<?php 
 		if(isset($_SESSION['query'])){
 			$_SESSION['i'] = 0;

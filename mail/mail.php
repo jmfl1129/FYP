@@ -1,5 +1,5 @@
 <?php    
-    include_once 'mail/aliyun-php-sdk-core/Config.php';
+/*     include_once 'mail/aliyun-php-sdk-core/Config.php';
     use Dm\Request\V20151123 as Dm;            
     //Need to set up the corresponding region name, such as east China 1 region is set to cn-hangzhou, Singapore region is set to ap-southeast-1, Australia region is set to ap-southeast-2.
     $iClientProfile = DefaultProfile::getProfile("ap-southeast-1", "", "");        
@@ -29,5 +29,5 @@
     catch (ServerException  $e) {        
         print_r($e->getErrorCode());   
         print_r($e->getErrorMessage());
-    }
+    } */
 ?>

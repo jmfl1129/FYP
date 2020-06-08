@@ -1,5 +1,5 @@
 <?php
-if (!isset($_COOKIE['id'])){
+/* if (!isset($_COOKIE['id'])){
 	echo "<script
 			type='text/javascript'>
 				window.location= \"error.php\";
@@ -37,6 +37,6 @@ try{
     printf($e->getMessage() . "\n");
     return;
 }
-print(__FUNCTION__ . ": OK" . "\n");
+print(__FUNCTION__ . ": OK" . "\n"); */
 
 ?>

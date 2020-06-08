@@ -1,5 +1,5 @@
 <?php
-if (!isset($_COOKIE['id'])){
+/* if (!isset($_COOKIE['id'])){
 	echo "<script
 			type='text/javascript'>
 				window.location= \"error.php\";
@@ -43,6 +43,6 @@ try{
     return;
 }
 
-unlink($filePath);
+unlink($filePath); */
 
 ?>
