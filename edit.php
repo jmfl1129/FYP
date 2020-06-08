@@ -313,7 +313,7 @@ body {
 			  <?php 
 				//$row = $_SESSION['query']->fetch(\PDO::FETCH_ASSOC);
 				$_SESSION['i'] = 1;
-				$object_name = 'images';
+				$object_name = 'images.png';
 				//include 'uploads/php_sdk_download.php';
 				$_SESSION['localfile'] = 'img_tmp/' . $_COOKIE['name'] . '/' . $object_name;
 				$_SESSION['photolink'] = 'images';
